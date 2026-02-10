@@ -16,6 +16,7 @@ void ExibirLogo()
 
 void ExibirOpcoesDoMenu()
 {
+    
     Console.WriteLine("\nDigite 1 para registrar uma banda");
     Console.WriteLine("Digite 2 para mostrar todas as banda");
     Console.WriteLine("Digite 3 para avaliar uma banda");
@@ -30,7 +31,7 @@ void ExibirOpcoesDoMenu()
 
     switch (opcaoEscolhidaNumerica)
     {
-        case 1:
+        case 1: RegistrarBanda();
             Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica);
             break;
         case 2:
@@ -49,6 +50,18 @@ void ExibirOpcoesDoMenu()
             Console.WriteLine("Opcão invalida");
             break;
     }
+}
+
+void RegistrarBanda()
+{
+    Console.Clear();
+    Console.WriteLine("Registro de bandas");
+    Console.Write("Digite o nome da banda que deseja registrar: ");
+    string nomeDaBanda = Console.ReadLine()!;
+    Console.WriteLine($"A banda {nomeDaBanda} foi registrada com sucesso!");
+    Thread.Sleep(2000);
+    Console.Clear();
+    ExibirOpcoesDoMenu();
 }
 
 ExibirLogo();
