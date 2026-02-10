@@ -1,4 +1,4 @@
-﻿using System; // Slide 7: Importando bibliotecas básicas
+﻿using System; //  Importando bibliotecas básicas
 
 class Program
 {
@@ -7,26 +7,26 @@ class Program
         Console.WriteLine("=== AULA 01: FUNDAMENTOS E VARIÁVEIS ===");
 
         // ============================================================
-        // 1. TIPOS DE DADOS E VARIÁVEIS (Baseado nos Slides 8, 9 e 10)
+        // 1. TIPOS DE DADOS E VARIÁVEIS 
         // ============================================================
 
-        // Números Inteiros (Slide 8)
+        // Números Inteiros 
         int idade = 22;              // 'int' é o padrão para números sem vírgula
         long populacaoMundial = 8000000000; // 'long' é para números gigantes
 
-        // Números Decimais (Slide 8 - Atenção aos sufixos!)
+        // Números Decimais 
         double altura = 1.75;        // 'double' é o padrão para decimais
         float peso = 70.5f;          // 'float' precisa do 'f' no final (menos preciso)
         decimal saldoBancario = 1500.99m; // 'decimal' precisa do 'm'. OBRIGATÓRIO para dinheiro!
 
-        // Texto e Caracteres (Slide 9)
+        // Texto e Caracteres 
         char inicial = 'A';          // 'char' usa aspas simples (um caractere só)
         string nome = "Amanda";      // 'string' usa aspas duplas (texto)
 
-        // Lógica (Slide 9)
+        // Lógica 
         bool estaEstudando = true;   // 'bool' só aceita true (verdadeiro) ou false (falso)
 
-        // Inferência de Tipo (Slide 9)
+        // Inferência de Tipo 
         var curso = "Engenharia de Software"; // O C# descobre sozinho que é string
 
         Console.WriteLine($"Aluna: {nome} | Curso: {curso}");
@@ -34,7 +34,7 @@ class Program
 
 
         // ============================================================
-        // 2. ENTRADA, SAÍDA E CONVERSÃO (Baseado no Slide 11)
+        // 2. ENTRADA, SAÍDA E CONVERSÃO 
         // ============================================================
         Console.WriteLine("\n--- Testando Entrada de Dados ---");
 
@@ -49,7 +49,7 @@ class Program
 
 
         // ============================================================
-        // 3. OPERADORES MATEMÁTICOS (Baseado no Slide 12)
+        // 3. OPERADORES MATEMÁTICOS 
         // ============================================================
 
         // Soma (+)
