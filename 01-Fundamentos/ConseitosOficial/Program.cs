@@ -68,6 +68,24 @@ class Program
         Console.WriteLine($"O resto da divisão da idade por 2 é: {resto}");
 
         // ==========================================================
+        // 4. ESTRUTURAS DE REPETIÇÃO (FOR)
+        // ==========================================================
+        Console.WriteLine("\n--- Loop FOR (Para percorrer listas) ---");
+
+        // Primeiro, criamos uma lista para testar
+        List<string> listaDasBandas = new List<string> { "Pink Floyd", "Led Zeppelin", "Beatles" };
+
+        // SINTAXE DO FOR: (INICIO ; CONDIÇÃO ; PASSO)
+        // 1. int i = 0  -> Começa o contador no zero (primeira posição)
+        // 2. i < lista.Count -> Continua enquanto o contador for menor que o tamanho da lista
+        // 3. i++        -> Aumenta 1 no contador a cada volta
+
+        for (int i = 0; i < listaDasBandas.Count; i++)
+        {
+            Console.WriteLine($"Banda na posição {i}: {listaDasBandas[i]}");
+        }
+
+        // ==========================================================
         // 5. ERROS COMUNS (TIPAGEM FORTE)
         // ==========================================================
         // ATENÇÃO: Nunca compare tipos diferentes (Número vs Texto)
