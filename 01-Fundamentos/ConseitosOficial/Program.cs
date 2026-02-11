@@ -105,5 +105,27 @@ class Program
         {
             Console.WriteLine(musica + " -> essa música é ótima");
         }
+
+        // ==========================================================
+        // 6. LOOP FOREACH (PARA CADA...)
+        // ==========================================================
+        Console.WriteLine("\n--- Loop FOREACH (Mais simples) ---");
+
+        // Tradução: "Para Cada (string banda) dentro da (listaDasBandas)"
+        // Ele pega o primeiro item, joga na variável 'banda', executa o bloco, e repete.
+
+        foreach (string banda in listaDasBandas)
+        {
+            Console.WriteLine($"Banda: {banda}");
+        }
+
+        // ==========================================================
+        // RESUMO: QUAL USAR?
+        // ==========================================================
+        // FOR: Use quando precisar do índice (i).
+        // Ex: "Quero alterar a banda número 2" ou "Quero pular de 2 em 2".
+
+        // FOREACH: Use quando quiser ler a lista toda do início ao fim.
+        // Ex: "Quero mostrar tudo na tela". É mais fácil de ler e escrever.
     }
 }
