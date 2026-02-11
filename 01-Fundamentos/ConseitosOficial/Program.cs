@@ -66,5 +66,26 @@ class Program
         // Exemplo: Se o resto da divisão por 2 for 0, é par.
         int resto = idade % 2;
         Console.WriteLine($"O resto da divisão da idade por 2 é: {resto}");
+
+        // ==========================================================
+        // 5. ERROS COMUNS (TIPAGEM FORTE)
+        // ==========================================================
+        // ATENÇÃO: Nunca compare tipos diferentes (Número vs Texto)
+
+        int nota = 6;
+        string musica = "Yesterday";
+
+        // ERRADO: if (nota <= "6") 
+        // O erro será: "Operator '<=' cannot be applied to operands of type 'int' and 'string'"
+
+        // CORRETO: Remova as aspas para comparar número com número
+        if (nota <= 6)
+        {
+            Console.WriteLine(musica + " -> essa música não é tão boa");
+        }
+        else
+        {
+            Console.WriteLine(musica + " -> essa música é ótima");
+        }
     }
 }
