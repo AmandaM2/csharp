@@ -1,0 +1,5 @@
+Console.WriteLine("Qual o ano que vc nasceu?");
+        int anoDeNascimento = int.Parse(Console.ReadLine());
+        int anoAtual = 2026;
+        int idade = anoAtual - anoDeNascimento;
+Console.WriteLine("Você tem " +idade+ "anos" );
