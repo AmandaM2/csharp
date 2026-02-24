@@ -1,0 +1,7 @@
+        float nota01 =7.2f;
+        float nota02 = 8.3f;
+        float nota03 = 9.1f;
+        
+        float media = (nota01 + nota02 + nota03)/3;
+        
+        Console.WriteLine("A média das notas é: "+media);
