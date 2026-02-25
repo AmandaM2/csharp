@@ -1,6 +1,0 @@
-int minutos = 250;
-        int horas = minutos/60;
-        int resto = minutos%60;
-        
-        Console.WriteLine("Tempo: " + horas + " horas e " + resto + " minuto");
-        
