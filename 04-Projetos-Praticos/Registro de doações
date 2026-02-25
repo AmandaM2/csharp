@@ -1,7 +1,0 @@
-float valorRecebido = 500.00f;
-        bool anonimo = true;
-        char tipoConta = 'P';
-        
-        Console.WriteLine("valor Recebido R$" +valorRecebido);
-        Console.WriteLine("Doação anônima: " + anonimo);
-        Console.WriteLine("Tipo de conta:" +tipoConta);
